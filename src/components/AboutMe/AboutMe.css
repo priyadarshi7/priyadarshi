@@ -1,0 +1,60 @@
+/* AboutMe.css */
+.about-me-section {
+    position: relative;
+    padding: 4rem 2rem;
+    color: #ffffff;
+    font-family: 'future';
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure content is above the Vanta.js background */
+  }
+  
+  .about-me-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #00ffff;
+    font-family: 'Future', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .about-me-content {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  .about-me-text {
+    margin-bottom: 1.5rem;
+  }
+  
+  .highlight {
+    color: #00ffff;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-me-section {
+      padding: 2rem 1rem;
+    }
+  
+    .about-me-title {
+      font-size: 2rem;
+    }
+  
+    .about-me-content {
+      font-size: 1rem;
+    }
+  }

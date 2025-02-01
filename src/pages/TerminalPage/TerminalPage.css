@@ -1,0 +1,11 @@
+.terminal-page{
+    height: 100svh;
+    padding: 60px;
+    background-color: black;
+}
+
+@media (max-width:500px) {
+    .terminal-page{
+        padding: 0;
+    }
+}

@@ -1,0 +1,82 @@
+/* src/pages/Home/Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black; /* Optional: Add a background color */
+    /* background-image: url("/priyadarshi.png");
+    background-size: contain;
+    background-repeat: no-repeat; */
+  }
+  
+  .hologram-container {
+    height: 50%; /* Adjust the height as needed */
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .home-text-main {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure the text color is visible */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-family: monospace; /* Optional: Use a monospace font for better glitch effect */
+    flex-direction: column;
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Future', sans-serif;
+    opacity: 0.8;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  .scroll-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .scroll-arrow {
+    font-size: 24px;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, -10px);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .scroll-indicator svg {
+    width: 30px;
+    height: 30px;
+  }
+  

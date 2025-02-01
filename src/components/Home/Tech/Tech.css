@@ -1,0 +1,66 @@
+.tech-stack-marquee {
+    padding: 40px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee-inner {
+    display: flex;
+    gap: 40px; /* Adjust the gap between items */
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .tech-logo {
+    height: 40px;
+  }
+  
+  .tech-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .tech-stack-marquee h2{
+    font-family: future;
+    color: white;
+    font-size: 40px;
+  }
+
+  @media (max-width:600px) {
+    .tech-stack-marquee {
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+        background-color: black;
+        text-align: center;
+      }
+  }
+
+  /* Tech.css */
+.view-button {
+    background: linear-gradient(45deg, #00ffff, #00ffaa);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #1a1a1a;
+    font-family: 'Future', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background: linear-gradient(45deg, #00ffaa, #00ffff);
+  }
