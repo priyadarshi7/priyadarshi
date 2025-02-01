@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
+import { NavLink } from 'react-router-dom';
 const drawerWidth = 240;
 
 function DrawerAppBar(props) {
@@ -28,13 +28,13 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2, color: '#fff' }}>
-        MUI
+        WELCOME
       </Typography>
       <Divider />
       <List>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemText primary="Home" sx={{ color: '#fff' }} />
+            <NavLink to="/"><ListItemText primary="Terminal" sx={{ color: '#fff' }} /></NavLink>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>

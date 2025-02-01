@@ -67,9 +67,9 @@ export default function AudioPlayer() {
       <Dialog open={openDialog} onClose={closeSongDialog} maxWidth="xs" fullWidth sx={{ backdropFilter: 'blur(8px)', border: '2px solid #9B4DFF', boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.4)', background: 'linear-gradient(45deg, rgba(64, 144, 181, 0.8), rgba(158, 48, 169, 0.8))' }}>
         <DialogTitle sx={{ fontFamily: "future", color: "#9B4DFF", fontWeight: "900" }}>Select a Song</DialogTitle>
         <DialogContent sx={{ padding: '20px' }}>
-          <Button onClick={() => selectSong(1)} fullWidth sx={{ fontFamily: "future", color: "white", fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px', color:"#9B4DFF" }}>Track 1 Timeless</Button>
-          <Button onClick={() => selectSong(2)} fullWidth sx={{ fontFamily: "future", color: "white", fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px',  color:"#9B4DFF" }}>Track 2 Starboy</Button>
-          <Button onClick={() => selectSong(3)} fullWidth sx={{ fontFamily: "future", color: "white", fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px',  color:"#9B4DFF" }}>Track 3 Fein</Button>
+          <Button onClick={() => selectSong(1)} fullWidth sx={{ fontFamily: "future",  fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px', color:"#9B4DFF" }}>Track 1 Timeless</Button>
+          <Button onClick={() => selectSong(2)} fullWidth sx={{ fontFamily: "future",  fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px',  color:"#9B4DFF" }}>Track 2 Starboy</Button>
+          <Button onClick={() => selectSong(3)} fullWidth sx={{ fontFamily: "future",  fontWeight: "900", borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.2)', marginBottom: '10px',  color:"#9B4DFF" }}>Track 3 Fein</Button>
         </DialogContent>
         <DialogActions sx={{ padding: '10px' }}>
           <Button onClick={closeSongDialog} color="primary" sx={{ fontFamily: "future", color: "#9B4DFF", fontWeight: "900" }}>
