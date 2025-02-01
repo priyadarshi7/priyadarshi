@@ -10,6 +10,7 @@
     /* background-image: url("/priyadarshi.png");
     background-size: contain;
     background-repeat: no-repeat; */
+    overflow: hidden;
   }
   
   .hologram-container {
@@ -28,6 +29,7 @@
     font-size: 2rem; /* Adjust font size as needed */
     font-family: monospace; /* Optional: Use a monospace font for better glitch effect */
     flex-direction: column;
+    z-index: 1;
 }
 
 .scroll-down-indicator {
@@ -80,3 +82,23 @@
     height: 30px;
   }
   
+  .curvy-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; /* Ensure the line doesn't interfere with clicks */
+  }
+
+  .location{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    gap:10px;
+  }

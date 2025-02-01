@@ -2,6 +2,7 @@
     padding: 40px;
     background-color: black;
     text-align: center;
+    z-index: 3;
   }
   
   .marquee-container {
@@ -63,4 +64,10 @@
   
   .view-button:hover {
     background: linear-gradient(45deg, #00ffaa, #00ffff);
+  }
+
+  @media (max-width: 500px) {
+    .tech-stack-marquee h2{
+        font-size: 25px;
+    }
   }

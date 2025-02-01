@@ -82,6 +82,10 @@ import GlitchedWriter from 'glitched-writer';
 import FuturisticCard from "../../components/Home/Contact/FuturisticCard";
 import TechStackMarquee from "../../components/Home/Tech/Tech";
 import AboutMe from "../../components/AboutMe/About";
+import MatrixRain from "../../components/Home/MatrixRain/MatrixRain";
+import GlobeComponent from "../../components/Home/Earth/Earth";
+import MarqueeExperience from "../../components/Home/Experience/Experience";
+import Building from "../../components/Home/Building/Building";
 
 const Home = () => {
   const textRef = useRef(null);
@@ -124,7 +128,7 @@ const Home = () => {
     
     // Function to restart the glitch effect
     const restartGlitch = () => {
-      writer.write(`Developer`)
+      writer.write(`Just a Tech Guy`)
     };
 
     // Start the initial glitch effect
@@ -143,6 +147,7 @@ const Home = () => {
   return (
     <>
     <div className="home" >
+    <MatrixRain/>
       <DrawerAppBar />
       <div className="home-text-main">
       <div className="home-text" ref={textRef}>
@@ -175,8 +180,20 @@ const Home = () => {
         </div>
     </div>
     <AboutMe/>
-    <TechStackMarquee/>
+    <TechStackMarquee/> 
+    <MarqueeExperience/> 
+    <Building/> 
     <FuturisticCard/>
+    <div className="location" >
+      <div className="loaction-lat" style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"20px", textAlign:"center"}}>
+      <h2 style={{background:"black", color:"white", fontFamily:"future"}}>Latitude: <span style={{color:"#00ffff"}}>21.164993</span></h2>
+      <h2 style={{background:"black", color:"white", fontFamily:"future"}}>Longitude: <span style={{color:"#00ffff"}}>81.775307</span></h2>
+      </div>
+      <h2 style={{background:"black", color:"white", fontFamily:"future", color:"#00ffff"}}>IIIT, NAYA RAIPUR</h2>
+    </div>
+    <div style={{  background:"black" }}>
+        <GlobeComponent />
+      </div>
     </>
   );
 };

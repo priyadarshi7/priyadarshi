@@ -1,0 +1,76 @@
+/* Container for the entire marquee section */
+.marquee-container {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    font-family:fantasy;
+  }
+  
+  /* Title of the section */
+  .marquee-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* Dark gray text */
+    margin-bottom: 2rem;
+    font-family: future;
+  }
+  
+  /* Wrapper for the marquee */
+  .marquee-wrapper {
+    gap: 2rem; /* Adjust gap between cards */
+  }
+  
+  /* Inner content of the marquee */
+  .marquee-inner {
+    display: flex;
+  }
+  
+  /* Styling for each experience card */
+  .experience-card {
+    flex-shrink: 0;
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+  }
+  
+  /* Container for the company logo */
+  .company-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Company logo styling */
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover; /* Ensure the logo fits well */
+  }
+  
+  /* Company name styling */
+  .company-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937; /* Dark gray text */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Job title styling */
+  .job-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4b5563; /* Medium gray text */
+    margin-bottom: 1rem;
+  }
+  
+  /* Job description styling */
+  .job-description {
+    font-size: 1rem;
+    color: #6b7280; /* Light gray text */
+    line-height: 1.5;
+  }

@@ -20,6 +20,7 @@ const TechStackMarquee = () => {
 
   return (
     <div className="tech-stack-marquee">
+        <h2>Tech Stack</h2>
        <LangMarquee/>
        <DevMarquee/>
        <button className="view-button" onClick={openPopup}>
