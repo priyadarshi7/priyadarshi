@@ -114,7 +114,6 @@ const Home = () => {
     // Cleanup on component unmount
     return () => {
       clearInterval(intervalId); // Clear the interval
-      writer.destroy(); // Destroy the writer instance
     };
   }, []);
 
@@ -140,7 +139,6 @@ const Home = () => {
     // Cleanup on component unmount
     return () => {
       clearInterval(intervalId); // Clear the interval
-      writer.destroy(); // Destroy the writer instance
     };
   }, []);
 
@@ -189,7 +187,7 @@ const Home = () => {
       <h2 style={{background:"black", color:"white", fontFamily:"future"}}>Latitude: <span style={{color:"#00ffff"}}>21.164993</span></h2>
       <h2 style={{background:"black", color:"white", fontFamily:"future"}}>Longitude: <span style={{color:"#00ffff"}}>81.775307</span></h2>
       </div>
-      <h2 style={{background:"black", color:"white", fontFamily:"future", color:"#00ffff"}}>IIIT, NAYA RAIPUR</h2>
+      <h2 style={{background:"black", fontFamily:"future", color:"#00ffff"}}>IIIT, NAYA RAIPUR</h2>
     </div>
     <div style={{  background:"black" }}>
         <GlobeComponent />

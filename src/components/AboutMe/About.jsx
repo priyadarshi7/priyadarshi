@@ -28,7 +28,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className="about-me-section" ref={vantaRef}>
+    <section className="about-me-section" ref={vantaRef} id="aboutme">
       <div className="about-me-container">
         <h1 className="about-me-title">About Me</h1>
         <div className="about-me-content">

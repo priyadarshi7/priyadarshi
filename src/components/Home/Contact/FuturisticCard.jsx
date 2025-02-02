@@ -32,7 +32,7 @@ const FuturisticCard = () => {
 //   }, [vantaEffect]);
 
   return (
-    <div className="contact" ref={vantaRef}>
+    <div className="contact" ref={vantaRef} id="connect">
         <h2>Connect</h2>
       <div className="parent">
         <div className="card">

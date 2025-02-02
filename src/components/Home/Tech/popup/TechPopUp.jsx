@@ -36,8 +36,8 @@ const TechStackPopup = ({ onClose }) => {
         </button>
         <h2 className="popup-title">Tech Stack</h2>
         <div className="tech-stack-grid">
-          {techStackLogos.map((tech) => (
-            <div key={tech.id} className="tech-item">
+          {techStackLogos.map((tech,index) => (
+            <div key={index} className="tech-item">
               <img src={tech.logo} alt={tech.name} className="tech-logo" />
             </div>
           ))}

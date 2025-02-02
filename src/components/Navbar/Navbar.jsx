@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { NavLink } from 'react-router-dom';
 const drawerWidth = 240;
 
 function DrawerAppBar(props) {
@@ -26,26 +27,26 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, color: '#fff' }}>
+      <Typography variant="h6" sx={{ my: 2, color: '#fff', fontFamily:"future" }}>
         WELCOME
       </Typography>
       <Divider />
       <List>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: 'center' }}>
-           <ListItemText primary="Home" sx={{ color: '#fff' }} />
+      <NavLink to="/"><ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: 'center', fontFamily:"future", textTransform:'none' }}>
+           <ListItemText primary="Terminal" sx={{ color: '#fff', fontFamily:"future", textTransform:'none' }} />
           </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemText primary="About" sx={{ color: '#fff' }} />
+        </ListItem></NavLink>
+       <a href="#aboutme"><ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: 'center', fontFamily:"future", textTransform:'none' }}>
+            <ListItemText primary="About" sx={{ color: '#fff', fontFamily:"future", textTransform:'none' }} />
           </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemText primary="Contact" sx={{ color: '#fff' }} />
+        </ListItem></a>
+        <a href="#connect"><ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: 'center', fontFamily:"future", textTransform:'none' }}>
+            <ListItemText primary="Contact" sx={{ color: '#fff', fontFamily:"future", textTransform:'none' }} />
           </ListItemButton>
-        </ListItem>
+        </ListItem></a>
       </List>
     </Box>
   );
@@ -91,7 +92,7 @@ function DrawerAppBar(props) {
             PRIYADARSHI
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button 
+            <NavLink to="/"><Button 
               sx={{ 
                 color: '#fff',
                 textTransform: 'none',
@@ -106,9 +107,9 @@ function DrawerAppBar(props) {
                  fontFamily:"future"
               }}
             >
-              Home
-            </Button>
-            <Button 
+              Terminal
+            </Button></NavLink>
+            <a href="#aboutme"><Button 
               sx={{ 
                 color: '#fff',
                 textTransform: 'none',
@@ -123,8 +124,8 @@ function DrawerAppBar(props) {
               }}
             >
               About
-            </Button>
-            <Button 
+            </Button></a>
+            <a href="#connect"><Button 
               sx={{ 
                 color: '#fff',
                 textTransform: 'none',
@@ -139,7 +140,7 @@ function DrawerAppBar(props) {
               }}
             >
               Contact
-            </Button>
+            </Button></a>
           </Box>
         </Toolbar>
       </AppBar>

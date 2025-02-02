@@ -9,14 +9,14 @@ export default function Terminal(props) {
             <p>
               I am <span style={{ color: "#fc5e03" }}>Priyadarshi</span>, a passionate <span style={{ color: "#fc5e03", }}>Full Stack Developer</span> currently building a startup. I am deeply exploring <span style={{ color: "#fc5e03" }}>Blockchain technology</span> and its applications to create innovative solutions.
             </p>
-            <p style={{ marginTop: "18px" }}>
+            <div style={{margin:"18px"}}>
               <strong>Tech Skills:</strong>
               <ul style={{ marginLeft: "20px", marginTop: "10px", listStyle: "none" }}>
                 <li>- <span style={{ color: "#fc5e03" }}>Languages</span>: JavaScript, TypeScript, C++, C, Solidity</li>
                 <li>- <span style={{ color: "#fc5e03" }}>Tech</span>: React.js, Next.js, Socket.io, Node.js, Express.js, MongoDB, EVM, Git/GitHub</li>
                 <li>- <span style={{ color: "#fc5e03" }}>DevOps</span>: Nginx</li>
               </ul>
-            </p>
+              </div>
           </div>
         );
       },
@@ -52,14 +52,12 @@ export default function Terminal(props) {
     tech: () => {
         return (
           <div style={{margin:"18px"}}>
-            <p>
               <strong>Tech Skills:</strong>
               <ul style={{ marginLeft: "20px", marginTop: "10px", listStyle: "none" }}>
                 <li>- <span style={{ color: "#fc5e03" }}>Languages</span>: JavaScript, TypeScript, C++, C, Solidity</li>
                 <li>- <span style={{ color: "#fc5e03" }}>Tech</span>: React.js, Next.js, Socket.io, Node.js, Express.js, MongoDB, EVM, Git/GitHub</li>
                 <li>- <span style={{ color: "#fc5e03" }}>DevOps</span>: Nginx</li>
               </ul>
-            </p>
           </div>
         );
       },

@@ -37,9 +37,9 @@ const Building = () => {
                 className="company-logo"
               />
             </div>
-            <h2 className="company-name">{exp.company}</h2>
-            <h3 className="job-title">{exp.title}</h3>
-            <p className="job-description">{exp.description}</p>
+            <h2 className="company-name"  style={{fontFamily:"fantasy"}}>{exp.company}</h2>
+            <h3 className="job-title" style={{fontFamily:"fantasy"}}>{exp.title}</h3>
+            <p className="job-description" style={{fontFamily:"fantasy"}}>{exp.description}</p>
           </div>
         ))}
       </div>
