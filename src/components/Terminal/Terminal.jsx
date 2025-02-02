@@ -21,7 +21,7 @@ export default function Terminal(props) {
         );
       },
     website: () => {
-      window.open("https://portfolio-lovat-nine-26.vercel.app/priyadarshi", "_blank"); // Replace with your website URL
+      window.open("https://priyadarshi.vercel.app/priyadarshi", "_blank"); // Replace with your website URL
       return "Opening website...";
     },
     contact: () => {
