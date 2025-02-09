@@ -18,6 +18,7 @@
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
     "@react-three/postprocessing": "^2.19.1",
+    "@vercel/analytics": "^1.4.1",
     "glitched-writer": "^2.0.29",
     "gsap": "^3.12.7",
     "hamburger-react": "^2.5.2",

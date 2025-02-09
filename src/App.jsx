@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import TerminalPage from './pages/TerminalPage/TerminalPage'
 import Home from './pages/Home/Home'
 import AudioPlayer from './components/Music/AudioPlayer'
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/priyadarshi" element={<Home/>} />
     </Routes>
     <AudioPlayer/>
+    <Analytics/>
     </>
   )
 }
