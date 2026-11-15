@@ -2,7 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import { About, Skills, Achievements, CodingProfiles, Contact } from "./components/Lists";
+import { Skills, Achievements, CodingProfiles, Contact } from "./components/Lists";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -13,7 +13,6 @@ export default function App() {
         <Hero />
         <Projects />
         <Experience />
-        {/* <About /> */}
         <Skills />
         <Achievements />
         <CodingProfiles />

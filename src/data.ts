@@ -34,7 +34,6 @@ export const sections = [
   { id: "home", label: "Home" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
-  { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "achievements", label: "Achievements" },
   { id: "coding", label: "Coding" },
